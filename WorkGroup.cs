@@ -4,24 +4,24 @@ namespace POO;
 
 public class WorkGroup
 {
-    private List<Employe> employes;
+    private List<Employe> employees;
 
     public WorkGroup()
     {
-        employes = new List<Employe>();
+        employees = new List<Employe>();
     }
 
     public void AddEmploye(Employe employe)
     {
-        employes.Add(employe);
+        employees.Add(employe);
         Console.WriteLine($"Employe {employe.GetType().Name} added to the group.");
     }
 
-    public void ListEmployes()
+    public void ListEmployees()
     {
         Console.WriteLine();
-        Console.WriteLine("Group Employes:");
-        foreach (var employe in employes)
+        Console.WriteLine("Group Employees:");
+        foreach (var employe in employees)
         {
             employe.ShowInfo();
             Console.WriteLine($"Calculated Salary: {employe.CalculateSalary()} USD");
