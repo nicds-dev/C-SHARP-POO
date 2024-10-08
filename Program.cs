@@ -1,9 +1,9 @@
 ﻿using POO;
 
-WorkGroup workGroupA = new WorkGroup();
+WorkGroup workGroupA = new();
 
-FullTimeEmploye employe1 = new FullTimeEmploye("Pepe", "Clown", 800);
-PartTimeEmploye employe2 = new PartTimeEmploye("Jhon", "Pork", 5, 88);
+FullTimeEmploye employe1 = new("Pepe", "Clown", 800);
+PartTimeEmploye employe2 = new("Jhon", "Pork", 5, 88);
 
 workGroupA.AddEmploye(employe1);
 workGroupA.AddEmploye(employe2);

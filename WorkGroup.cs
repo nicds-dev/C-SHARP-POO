@@ -14,7 +14,7 @@ public class WorkGroup
     public void AddEmploye(Employe employe)
     {
         employees.Add(employe);
-        Console.WriteLine($"Employe {employe.GetType().Name} added to the group.");
+        Console.WriteLine($"{employe.GetType().Name} added to the group.");
     }
 
     public void ListEmployees()
